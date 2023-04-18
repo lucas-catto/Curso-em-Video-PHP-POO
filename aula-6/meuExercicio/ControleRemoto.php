@@ -65,7 +65,8 @@
         }
         public function fecharMenu(){
             if($this->abrirMenu()){
-                echo "<p>Fechando o menu..</p>"
+                echo "<p>Fechando o menu..</p>";
+            }
         }
         public function maisVolume(){
             if ($this->getLigado()) {
