@@ -13,14 +13,14 @@
 
 		// Definindo os métodos:
 		public function abrirConta($contaTipo){
-			$setStatus(true);
+			$this->setStatus(true);
 			if ($contaTipo == "cc"){
-				$setTipo("cc");
-				$setSaldo(50);
+				$this->setTipo("cc");
+				$this->setSaldo(50);
 			}
 			elseif ($contaTipo == "cp") {
-				$setTipo("cp");
-				$setSaldo(150);
+				$this->setTipo("cp");
+				$this->setSaldo(150);
 			}
 			else{
 				return "Error!";
@@ -61,7 +61,7 @@
 			}
 		}
 		public function pagarMensal(){
-			$var;
+			$var = 0;
 			if($this->getTipo() == "cc"){
 				$var = 12;
 			}
