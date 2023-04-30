@@ -1,0 +1,9 @@
+Interface InterfaceLutador
+    
+    metodo publico apresentar();
+    metodo publico status();
+    metodo publico ganharLuta();
+    metodo publico perderLuta();
+    metodo publico empatarLuta();
+
+FimInterface

@@ -1,0 +1,148 @@
+
+incluir "InterfaceLutador.txt";
+
+Classe Lutador extenda InterfaceLutador
+
+    // Atributos: 
+    privado nome          : Caractere
+    privado nacionalidade : Caractere
+    privado idade         : Inteiro
+    privado altura        : Real
+    privado peso          : Real
+    privado categoria     : Caractere
+    privado vitorias      : Inteiro
+    privado derrotas      : Inteiro
+    privado empates       : Inteiro
+
+    // Método Construtor
+    publico Metodo Contrutor(
+                            nome          : Caractere,
+                            nacionalidade : Caractere,
+                            idade         : Inteiro,
+                            altura        : Real,
+                            peso          : Real,
+                            vitorias      : Inteiro,
+                            derrotas      : Inteiro,
+                            empates       : Inteiro)
+
+        setNome(nome);
+        setNacionalidade(nacionalidade);
+        setIdade(idade);
+        setAltura(altura);
+        setPeso(peso);
+        setVitorias(vitorias);
+        setDerrotas(derrotas);
+        setEmpates(empates);
+
+    FimMetodo
+
+    // Métodos:
+    metodo publico apresentar()
+        Escreva("Lutador: ", getNome());
+        Escreva("Origem: ", getNacionalidade());
+        Escreva(getIdade(), " anos");
+        Escreva(getAltura(), "m de altura");
+        Escreva("Pesando: ", getPeso(), "Kg");
+        Escreva("Ganhou: ", getVitorias());
+        Escreva("Perdeu: ", getDerrotas());
+        Escreva("Empatou: ", getEmpates());
+    FimMetodo
+    metodo publico status()
+        Escreva(getNome());
+        Escreva(" é um peso ", getCategoria());
+        Escreva(getVitorias(), " vitórias");
+        Escreva(getDerrotas(), " derrotas");
+        Escreva(getEmpates(),  " empates");
+    FimMetodo
+    metodo publico ganharLuta()
+        setVitorias(getVitorias() +1);
+    FimMetodo
+    metodo publico perderLuta()
+        setDerrotas(getDerrotas() +1);
+    FimMetodo
+    metodo publico empatarLuta()
+        setEmpates(getEmpates() +1);
+    FimMetodo
+
+
+    // Getter and Setter (UML/PHP)
+    // -----------------------------------------------------
+    Metodo privado getNome()
+        retorna esse->nome;
+    FimMetodo
+    Metodo privado setNome($nome)
+        esse->nome = $nome;
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getNacionalidade()
+        retorna esse->nacionalidade;
+    FimMetodo
+    Metodo privado setNacionalidade($nacionalidade)
+        esse->nacionalidade  = $nacionalidade;
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getIdade()
+        retorna esse->idade;
+    FimMetodo
+    Metodo privado setIdade($idade)
+        esse->idade  = $idade;
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getAltura()
+        retorna esse->altura;
+    FimMetodo
+    Metodo privado setAltura()
+        esse->$altura = $altura;
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getPeso()
+        retorna esse->peso;
+    FimMetodo
+    Metodo privado setPeso($peso)
+        esse->peso = $peso;
+        setCategoria()
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getCategoria()
+        retorna esse->categoria;
+    FimMetodo
+    Metodo privado setCategoria($categoria)
+        if(peso < 52.2){}
+        else if(peso <= 70.3){
+            categoria = "Leve";
+        }
+        else if(peso <= 83.9){
+            categoria = "Médio";
+        }
+        else if(peso <= 120.2){
+            categoria = "Pesado";
+        }
+        else{
+            categoria = "Inválida";
+        }
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getVitorias()
+        retorna esse->vitorias;
+    FimMetodo
+    Metodo privado setVitorias($vitorias)
+        esse->vitorias = $vitorias;
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getDerrotas()
+        retorna esse->derrotas;
+    FimMetodo
+    Metodo privado setDerrotas($derrotas)
+        esse->derrotas  = $derrotas;
+    FimMetodo
+    // -----------------------------------------------------
+    Metodo privado getEmpates()
+        retorna esse->empates;
+    FimMetodo
+    Metodo privado setEmpates($empates)
+        esse->empates = $empates;
+    FimMetodo
+    // -----------------------------------------------------
+
+
+FimClasse
