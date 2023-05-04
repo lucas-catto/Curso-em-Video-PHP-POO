@@ -16,40 +16,44 @@
         private $draw;
 
         // Construct
-        public function _construct($name,$nacionality,$age,$height,$weight,$wins,$defeats,$draw){
-            $this->setName($name);
-            $this->setNacionality($nacionality);
-            $this->setAge($age);
-            $this->setHeight($height);
+        public function __construct($name,$nacionality,$age,$height,$weight,$wins,$defeats,$draw){
             $this->setWeight($weight);
-            $this->setWins($wins);
-            $this->setDefeats($defeats);
-            $this->setDraw($draw);
+            $this->name        = $name;
+            $this->nacionality = $nacionality;
+            $this->age         = $age;
+            $this->height      = $height;
+            $this->getCategory();
+            $this->wins        = $wins;
+            $this->defeats     = $defeats;
+            $this->draw        = $draw;
         }
-
 
         public function toPresent(){
-            echo "Lutador:     ", $this->getName();
-            echo "Nacionality: ", $this->getNacionality();
-            echo "Age:         ", $this->getAge();
-            echo "Height:      ", $this->getHeight();
-            echo "Weight:      ", $this->getWeight();
-            echo "Wins:        ", $this->getWins();
-            echo "Defeats:     ", $this->getDefeats();
-            echo "Draw:        ", $this->getDraw();
+            echo "<p>----------------------------------</p>";
+            echo         "Fighter:     " . $this->getName();
+            echo "</br>"."Nacionality: " . $this->getNacionality();
+            echo "</br>"."Age:         " . $this->getAge();
+            echo "</br>"."Height:      " . $this->getHeight();
+            echo "</br>"."Weight:      " . $this->getWeight();
+            echo "</br>"."Wins:        " . $this->getWins();
+            echo "</br>"."Defeats:     " . $this->getDefeats();
+            echo "</br>"."Draw:        " . $this->getDraw();
+            echo "<p>----------------------------------</p>";
         }
         public function status(){
-            echo $this->getName();
-            echo " category ", $this->getCategory();
-            echo $this->getWins(),    "wins";
-            echo $this->getDefeats(), "defeats";
-            echo $this->getDraw(),    "draws";
+            echo "<p>----------------------------------</p>";
+            echo "Name: "            . $this->getName();
+            echo "</br>"."Category: " . $this->getCategory();
+            echo "</br>"."Wins:     " . $this->getWins();
+            echo "</br>"."Defeats:  " . $this->getDefeats();
+            echo "</br>"."Draws:    " . $this->getDraw();
+            echo "</br>"."<p>----------------------------------</p>";
         }
         public function winFight(){
-            $this->setWins($this->getWins() +1);
+            $this->setWins($this->getWins() + 1);
         }
         public function loseFight(){
-            $this->setDefeats($this->getDefeats() +1);
+            $this->setDefeats($this->getDefeats() + 1);
         }
         public function drawFight(){
             $this->setDraw($this->getDraw() + 1);
@@ -90,6 +94,7 @@
         }
         private function setWeight($weight){
             $this->weight = $weight;
+            $this->setCategory();
         }
         // ---------------------------------------------
         private function getCategory(){
@@ -97,7 +102,7 @@
         }
         private function setCategory(){
 
-            if($this->weight > 52.2){
+            if($this->weight < 52.2){
                 $this->category = "Invalid!";
             }
             elseif ($this->weight <= 70.3) {
