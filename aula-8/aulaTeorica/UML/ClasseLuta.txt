@@ -1,0 +1,48 @@
+(Exemplificando com PHP+UML)
+
+Classe Luta {
+    // Métodos
+    publico metodo marcarLuta(l1, l2 : Lutador){
+        se(l1.getCategoria() == l2.getCategoria() e l1 <> l2){ // Categorias iguais e lutadores diferentes
+            aprovada   = verdadeiro;
+            desafiado  = l1;
+            desafiante = l2;
+        }
+        senao{
+            aprovada   = falso;
+            desafiado  = nulo;
+            desafiante = nulo;
+        }
+    }
+
+    publico metodo lutar(){
+        se(aprovada){
+            desafiado.apresentar();
+            desafiante.apresentar();
+
+            vencedor = aleatorio(0,2);
+
+            escolha (vencedor){
+                // -------------------------------------------
+                caso 0: // Empate
+                    Escreva("Empatou!");
+                    desafiado.empatarLuat()
+                    desafiante.empatarLuta()
+                // -------------------------------------------
+                caso 1: // Ganhou Desafiado
+                    Escreva(desafiado.getNome());
+                    desafiado.ganharLuta();
+                    desafiante.perderLuta();
+                // -------------------------------------------
+                caso 2: // Ganhou Desafiante
+                    Escreva(desafiante.getNome());
+                    desafiado.perderLuta();
+                    desafiante.ganharLuta();
+                // -------------------------------------------
+            }
+        }
+        senao{
+            Escreva("Luta não pode acontecer.");
+        }
+    }
+}
