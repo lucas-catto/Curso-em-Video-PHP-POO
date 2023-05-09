@@ -5,7 +5,7 @@
     class Fighter implements FighterInterface{
         
         // Attribute:
-        private $name;
+        public $name;
         private $nacionality;
         private $age;
         private $height;
@@ -61,10 +61,10 @@
 
 
         // Getters and Setters
-        private function getName(){
+        public function getName(){
             return $this->name;
         }
-        private function setName($name){
+        public function setName($name){
             $this->name = $name;
         }
         // ---------------------------------------------
@@ -97,10 +97,10 @@
             $this->setCategory();
         }
         // ---------------------------------------------
-        private function getCategory(){
+        public function getCategory(){
             return $this->category;
         }
-        private function setCategory(){
+        public function setCategory(){
 
             if($this->weight < 52.2){
                 $this->category = "Invalid!";
