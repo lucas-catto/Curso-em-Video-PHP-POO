@@ -25,12 +25,13 @@
     $fighter[3]  = new Fighter("Dead Code",    "Australia",  "male",        28,    1.93,     81.6,    13,    0,    2);
     $fighter[4]  = new Fighter("Ufocobol",     "Brazil",     "male",        37,    1.70,    119.3,     5,    4,    3);
     $fighter[5]  = new Fighter("Nerdaard",     "EUA",        "male",        30,    1.81,    105.7,    12,    2,    4); 
-    $fighter[6]  = new Fighter("Zoe Tech",     "France",     "feminine",    31,    1.75,     68.9,    11,    2,    1); // Alterar os dados daqui pra baixo:
-    $fighter[7]  = new Fighter("Mia Byte",     "Brazil",     "feminine",    29,    1.68,     57.8,    14,    2,    3);
-    $fighter[8]  = new Fighter("Lena Code",    "EUA",        "feminine",    35,    1.65,     80.9,    12,    2,    1);
-    $fighter[9]  = new Fighter("Amy Dev",      "Australia",  "feminine",    28,    1.93,     81.6,    13,    0,    2);
-    $fighter[10] = new Fighter("Ava Tech",     "Brazil",     "feminine",    37,    1.70,    119.3,     5,    4,    3);
-    $fighter[11] = new Fighter("Bit Malwere",  "EUA",        "feminine",    30,    1.81,    105.7,    12,    2,    4);
+
+    $fighter[6]  = new Fighter("Zoe Tech",     "France",     "feminine",    29,    1.86,     87.9,     9,    2,    3); // Alterar os dados daqui pra baixo:
+    $fighter[7]  = new Fighter("Mia Byte",     "Brazil",     "feminine",    25,    1.63,     57.8,    12,    4,    4);
+    $fighter[8]  = new Fighter("Lena Code",    "EUA",        "feminine",    31,    1.71,     80.9,    11,    2,    2);
+    $fighter[9]  = new Fighter("Amy Dev",      "Australia",  "feminine",    28,    1.77,     81.6,     8,    4,    6);
+    $fighter[10] = new Fighter("Ava Tech",     "Brazil",     "feminine",    33,    1.67,     70.3,     3,    3,    2);
+    $fighter[11] = new Fighter("Bit Malwere",  "EUA",        "feminine",    34,    1.78,     64.7,    13,    3,    3);
 
     $UEC01 = new Fight(); // Male
     $UEC02 = new Fight(); // Feminine
