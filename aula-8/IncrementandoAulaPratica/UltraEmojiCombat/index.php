@@ -1,7 +1,7 @@
 <style>
     /*Estou colocando esse CSS pois luz clara dói meu olho.*/
     html {
-        background-color: rgb(150, 150, 150);
+        background-color: rgb(50, 50, 50);
     }
 </style>
 
@@ -34,8 +34,11 @@
     $fighter[11] = new Fighter("Bit Malwere",  "EUA",        "feminine",    34,    1.78,     64.7,    13,    3,    3);
 
     $UEC01 = new Fight(); // Male
+    $UEC01->makeFight($fighter[4], $fighter[5]);
     $UEC02 = new Fight(); // Feminine
 
+    // $fighter[0]->status();
+    // $fighter[1]->status();
     // $fighter[0]->status();
     // $fighter[1]->status();
     ?>
