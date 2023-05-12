@@ -33,13 +33,5 @@
     $fighter[10] = new Fighter("Ava Tech",     "Brazil",     "feminine",    33,    1.67,     70.3,     3,    3,    2);
     $fighter[11] = new Fighter("Bit Malwere",  "EUA",        "feminine",    34,    1.78,     64.7,    13,    3,    3);
 
-    $UEC01 = new Fight(); // Male
-    $UEC01->makeFight($fighter[4], $fighter[5]);
-    $UEC02 = new Fight(); // Feminine
-
-    // $fighter[0]->status();
-    // $fighter[1]->status();
-    // $fighter[0]->status();
-    // $fighter[1]->status();
     ?>
 </html></pre>
