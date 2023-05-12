@@ -7,6 +7,7 @@
         // Attribute:
         public $name;
         private $nacionality;
+        private $genre;
         private $age;
         private $height;
         private $weight;
@@ -16,10 +17,11 @@
         private $draw;
 
         // Construct
-        public function __construct($name,$nacionality,$age,$height,$weight,$wins,$defeats,$draw){
+        public function __construct($name,$nacionality,$genre,$age,$height,$weight,$wins,$defeats,$draw){
             $this->setWeight($weight);
             $this->name        = $name;
             $this->nacionality = $nacionality;
+            $this->genre       = $genre;
             $this->age         = $age;
             $this->height      = $height;
             $this->getCategory();
@@ -73,6 +75,13 @@
         }
         private function setNacionality($nacionality){
             $this->nacionality = $nacionality;
+        }
+        // ---------------------------------------------
+        private function getGenre(){
+            return $this->genre;
+        }
+        private function setGenre($genre){
+            $this->genre = $genre;
         }
         // ---------------------------------------------
         private function getAge(){
