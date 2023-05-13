@@ -77,10 +77,10 @@
             $this->nacionality = $nacionality;
         }
         // ---------------------------------------------
-        private function getGenre(){
+        public function getGenre(){
             return $this->genre;
         }
-        private function setGenre($genre){
+        public function setGenre($genre){
             $this->genre = $genre;
         }
         // ---------------------------------------------

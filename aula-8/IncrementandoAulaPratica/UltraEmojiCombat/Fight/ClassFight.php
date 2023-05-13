@@ -9,22 +9,21 @@ class Fight implements FightInterface{
     private $rounds;
     private $approved;
 
-    public function makeFight($fighter1, $fighter2)
-    {
-        if ($fighter1->getCategory() === $fighter2->getCategory() && ($fighter1 != $fighter2)) {
+    public function makeFight($fighter1, $fighter2){
+        if ($fighter1->getCategory() === $fighter2->getCategory() && ($fighter1 != $fighter2) && ($fighter1->getGenre() == $fighter2->getGenre())){
             $this->setApproved(true);
             $this->setChallenged($fighter1);
             $this->setChallenger($fighter2);
-        } else {
+        } 
+        else{
             $this->setApproved(false);
             $this->setChallenged(null);
             $this->setChallenger(null);
         }
 
     }
-    public function fight()
-    {
-        if ($this->getApproved()) {
+    public function fight(){
+        if ($this->getApproved()){
             $this->getChallenged()->toPresent();
             $this->getChallenger()->toPresent();
 
@@ -59,39 +58,31 @@ class Fight implements FightInterface{
     // --------------------------------------------------
     // Getter and Setter
     // --------------------------------------------------
-    private function getChallenged()
-    {
+    private function getChallenged(){
         return $this->challenged;
     }
-    private function setChallenged($challenged)
-    {
+    private function setChallenged($challenged){
         $this->challenged = $challenged;
     }
     // --------------------------------------------------
-    private function getChallenger()
-    {
+    private function getChallenger(){
         return $this->challenger;
     }
-    private function setChallenger($challenger)
-    {
+    private function setChallenger($challenger){
         $this->challenger = $challenger;
     }
     // --------------------------------------------------
-    private function getRounds()
-    {
+    private function getRounds(){
         return $this->rounds;
     }
-    private function setRounds($rounds)
-    {
+    private function setRounds($rounds){
         $this->rounds = $rounds;
     }
     // --------------------------------------------------
-    private function getApproved()
-    {
+    private function getApproved(){
         return $this->approved;
     }
-    private function setApproved($approved)
-    {
+    private function setApproved($approved){
         $this->approved = $approved;
     }
 // --------------------------------------------------
