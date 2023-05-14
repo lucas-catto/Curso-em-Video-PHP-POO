@@ -4,7 +4,15 @@
         private $age;
         private $genre;
         
-        public function birthday(){}
+        public function birthday(){
+            $this->setAge($this->getAge() + 1);
+        }
+
+        function __construct($name,$age,$genre){
+            $this->name  = $name;
+            $this->age   = $age;
+            $this->genre = $genre;
+        }
 
         // ==================================
         private function getName(){
