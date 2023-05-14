@@ -1,6 +1,7 @@
 <?php
 
-    require_once "../PeopleClass.php";
+    require_once "PersonClass.php";
+    require_once "BookInterface.php";
 
     class Book{
         private $title;
@@ -13,6 +14,16 @@
         public function details(){
             
         }
+
+        
+        // ====================================
+        public function open(){}
+        public function close(){}
+        public function leafThrough(){}
+        public function advancePage(){}
+        public function backPage(){}
+        // ====================================
+
 
         // -------------------------------------
         public function getTitle(){
