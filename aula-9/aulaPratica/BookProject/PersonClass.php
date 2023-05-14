@@ -15,7 +15,7 @@
         }
 
         // ==================================
-        private function getName(){
+        public function getName(){
             return $this->name;
         }
         private function setName($name){

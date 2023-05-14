@@ -11,13 +11,19 @@
         private $open;
         private $reader;
 
-        public function details(){}
+        public function details(){
+            echo "Book written by "      . $this->author;
+            echo "</br>"."Pages "        . $this->totalPages . ", being the atual: " . $this->presentPage . ".";
+            echo "</br>"."Being read by " . $this->reader->getName();
+        }
 
         function __construct($title,$author,$totalPages,$reader){
-            $this->title      = $title;
-            $this->author     = $author;
-            $this->totalPages = $totalPages;
-            $this->reader     = $reader;
+            $this->title       = $title;
+            $this->author      = $author;
+            $this->totalPages  = $totalPages;
+            $this->open        = false;
+            $this->presentPage = 0; // here, it's right because when you get a book in reality the page is 0
+            $this->reader      = $reader;
         }
 
         // ===================================
@@ -40,7 +46,7 @@
                 $this->presentPage ++;
             }
             else{
-                echo "This is already the last page!". $this->presentPage;
+                $this->presentPage = 0;
             }
         }
         public function backPage(){
@@ -48,7 +54,7 @@
                 $this->presentPage --;
             }
             else{
-                echo "The page is already 0!";
+                $this->presentPage = 0;
             }
         }
 
