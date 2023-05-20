@@ -12,10 +12,10 @@
             require_once "StudentClass.php";
             require_once "TeacherClass.php";
 
-            $person   = new Person();
-            $employee = new Employee();
-            $student  = new Student();
-            $teacher  = new Teacher();
+            $person   = new Person();   // The reason of the "notice" because isn't with the parameters, but it's working.
+            $employee = new Employee(); // The reason of the "notice" because isn't with the parameters, but it's working.
+            $student  = new Student();  // The reason of the "notice" because isn't with the parameters, but it's working.
+            $teacher  = new Teacher();  // The reason of the "notice" because isn't with the parameters, but it's working.
 
             $person  ->setName("Pedro");
             $employee->setName("Fabiana");
