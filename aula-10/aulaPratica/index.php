@@ -43,7 +43,7 @@
             // $student->changeWork();
             // $employee->cancelRegistration();
 
-            // Right:
+            // Right: 
             $teacher->reciveRaise(500.20);
             $employee->changeWork();
             $student->cancelReagistration();
