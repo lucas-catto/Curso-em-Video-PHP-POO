@@ -9,25 +9,28 @@
     </head>
     <body>
         <div class="container">
-            <form action="#" method="get">
-                <select name="type" id="type">
-                    <option value="#" disabled selected>Choose</option>
-                    <option value="teacher"    >Teacher</option>
-                    <option value="visitor"    >Visitor</option>
-                    <option value="student"    >Student</option>
-                    <option value="scholarship">Scholarship</option>
-                    <option value="tecnic"     >Tecnic</option>
-                </select>
+            <form action="../" method="get">
+                <div class="elements">
 
-
+                    <select name="type" id="type">
+                        <option value="#" disabled selected>Choose</option>
+                        <option value="teacher"    >Teacher</option>
+                        <option value="visitor"    >Visitor</option>
+                        <option value="student"    >Student</option>
+                        <option value="scholarship">Scholarship</option>
+                        <option value="tecnic"     >Tecnic</option>
+                    </select>
+    
+                </div>
                 <input type="submit" value="All finished!">
+
             </form>
         </div> <!-- container -->
 
         <?php
             $type = isset($_GET["type"]) ? $_GET["type"] : "";
 
-            if($type == "teacher"){
+            if($type == "teacher"){ 
                 require_once "..back/TeacherClass.php";
             }
             elseif ($type == "visitor"){

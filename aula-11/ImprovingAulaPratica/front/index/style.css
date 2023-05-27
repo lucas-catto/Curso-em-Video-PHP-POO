@@ -35,3 +35,10 @@ form{
     margin:           auto;
     background-color: brown;
 }
+
+.elements{
+    display: flex;
+    flex-direction: c;
+    padding: 50px;
+    justify-content: space-around;
+}
