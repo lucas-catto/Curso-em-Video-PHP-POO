@@ -9,9 +9,9 @@
             // Only requiests of files: 
             require_once "TeacherClass.php";
             require_once "VisitorClass.php";
-            require_once "Students/StudentClass.php";
-            require_once "Students/ScholarshipClass.php";
-            require_once "Students/TecnicClass.php";
+            require_once "StudentsClass/StudentClass.php";
+            require_once "StudentsClass/ScholarshipClass.php";
+            require_once "StudentsClass/TecnicClass.php";
             // -------------------------------------------
             // Only creating Objects: 
             $teacher             = new Teacher();
@@ -56,7 +56,49 @@
             print_r($student_scholarship);
             print_r($student_tecnic);
 
-
+            /* Result of this code:
+                        Teacher Object
+                (
+                    [specialty:Teacher:private] => 
+                    [salary:Teacher:private] => 
+                    [name:Person:private] => Lucas
+                    [age:Person:private] => 16
+                    [genre:Person:private] => M
+                )
+                Visitor Object
+                (
+                    [name:Person:private] => Elon Musk
+                    [age:Person:private] => 51
+                    [genre:Person:private] => M
+                )
+                Student Object
+                (
+                    [matriculation:Student:private] => 
+                    [course:Student:private] => 
+                    [name:Person:private] => Steve Jobs
+                    [age:Person:private] => 68
+                    [genre:Person:private] => M
+                )
+                Scholarship Object
+                (
+                    [scholarship:Scholarship:private] => 
+                    [renewScholarship:Scholarship:private] => 
+                    [matriculation:Student:private] => 
+                    [course:Student:private] => 
+                    [name:Person:private] => Bill Gates
+                    [age:Person:private] => 67
+                    [genre:Person:private] => M
+                )
+                Tecnic Object
+                (
+                    [professionalRegister:Tecnic:private] => 
+                    [matriculation:Student:private] => 
+                    [course:Student:private] => 
+                    [name:Person:private] => Linus Torvalds
+                    [age:Person:private] => 53
+                    [genre:Person:private] => M
+                )
+            */
         ?>
     </pre>
 </html>

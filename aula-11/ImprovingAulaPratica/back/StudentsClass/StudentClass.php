@@ -1,5 +1,5 @@
 <?php
-    require_once "../PersonClass.php";
+    require_once "PersonClass.php";
 
     class Student extends Person{
         private $matriculation;
