@@ -5,6 +5,7 @@
 <html>
     <pre>
         <?php
+            /*
             // -------------------------------------------
             // Only requiests of files: 
             require_once "TeacherClass.php";
@@ -55,7 +56,7 @@
             print_r($student_student);
             print_r($student_scholarship);
             print_r($student_tecnic);
-
+            */
             /* Result of this code:
                         Teacher Object
                 (
