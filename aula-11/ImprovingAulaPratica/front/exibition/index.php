@@ -7,14 +7,12 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <header>
+        <a href="../index/index.php">Go back to Index!</a>
+    </header>
     <body>
-        <header>
-            <a href="../index/index.php">Go Back!</a>
-        </header>
         <div class="container">
-            <form action="exibition.php" method="get">
-                
-            </form>
+            // apenas exibe
         </div>
     </body>
 </html>
