@@ -11,14 +11,15 @@ html, body{
 }
 
 body{
-    background-image: url("img/background-body.png");
-    background-size:  cover;
+    background-image:  url("../../front/img/background-body.png");
+    background-repeat: no-repeat;
+    background-size:   cover;
 }
 
 .container{
     width:            100%;
-    max-width:        800px;
-    height:           100%;
+    max-width:        1100px;
+    height:           auto;
     min-height:       100%;
     margin:           auto;
     display:          flex;
@@ -34,11 +35,23 @@ form{
     border-radius:    36px;
     margin:           auto;
     background-color: brown;
+    text-align:       center;
+}
+
+h1{
+    padding: 26px; /* 16px */
 }
 
 .elements{
-    display: flex;
-    flex-direction: c;
-    padding: 50px;
+    display:         flex;
+    flex-direction:  row;
+    padding:         63px; /* 83px */
     justify-content: space-around;
+}
+
+#submit{
+    width:            178px;
+    height:           25px;
+    border-radius:    15px;
+    background-color: gray;
 }
