@@ -15,10 +15,10 @@
             <!-- PHP + HTML -->
             <!-- ================================================================= -->
             <?php if($_GET['type'] == 'teacher'){ ?>
-                <form action="../exibition/index.php" method="get">
-                        
+                <form action="../exibition/index.php" name="teacher" method="get">
                     <input type="text"   name="name"      placeholder="Name"      required>
                     <input type="number" name="age"       placeholder="Age"       required>
+                    <input type="text"   name="genre"     placeholder="Genre"     required>
                     <input type="text"   name="specialty" placeholder="Specialty" required>
                     <input type="number" name="salary"    placeholder="Salary"    required>
 
@@ -41,7 +41,7 @@
             <?php if($_GET["type"] == 'student'){ ?>
                 <form action="../exibition/index.php" method="get">
                     <input type="text"   name="name"          placeholder="Name"          required>
-                    <input type="number" name="age"           placeholder="Age"r          equired>
+                    <input type="number" name="age"           placeholder="Age"           required>
                     <input type="text"   name="genre"         placeholder="Genre"         required>
                     <input type="text"   name="matriculation" placeholder="Matriculation" required>
                     <input type="text"   name="course"        placeholder="Course"        required>
