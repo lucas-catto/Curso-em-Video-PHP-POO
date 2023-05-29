@@ -56,16 +56,16 @@
                     /* --------------------------------------------------------------------------- */
                     elseif($course && $matriculation){
                         require_once "../../back/StudentsClass/StudentClass.php";
+                        
+                        $student_student = new Student;
 
-                        $student = new Student;
+                        $student_student->setName($name);
+                        $student_student->setAge($age);
+                        $student_student->setGenre($genre);
+                        $student_student->setCourse($course);
+                        $student_student->setMatriculation($matriculation);
 
-                        $student->setName($name);
-                        $student->setAge($age);
-                        $student->setGenre($genre);
-                        $student->setCourse($course);
-                        $student->setMatriculation($matriculation);
-
-                        print_r($student);
+                        print_r($student_student);
 
                     } // student-student
                     /* --------------------------------------------------------------------------- */
@@ -90,30 +90,9 @@
                     }// visitor
                     /* --------------------------------------------------------------------------- */
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                else{
+                    echo "<p>Something is wrong!</p>";
+                }
 
 
 
