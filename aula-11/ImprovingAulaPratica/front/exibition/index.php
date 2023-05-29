@@ -96,6 +96,20 @@
                         /* --------------------------------------------------------------------------- */
                         elseif($professionalRegister){
                             require_once "../../back/StudentsClass/";
+
+                            $student_tecnic = new Tecnic;
+                            
+                            $student_student->setName($name);
+                            $student_student->setAge($age);
+                            $student_student->setGenre($genre);
+                            $student_student->setProfessionalRegister($professionalRegister);
+
+                            echo "<p> Name: "                  .$student_tecnic->getName()                 ."</p>";
+                            echo "<p> Age: "                   .$student_tecnic->getAge()                  ."</p>";
+                            echo "<p> Genre: "                 .$student_tecnic->getGenre()                ."</p>";
+                            echo "<p> Professional Register: " .$student_tecnic->getProfessionalRegister() ."</p>";
+
+
                         } // Tecnic
                         /* --------------------------------------------------------------------------- */
                         else{
