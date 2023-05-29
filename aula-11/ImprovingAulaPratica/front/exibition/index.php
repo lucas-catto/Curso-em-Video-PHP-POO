@@ -86,12 +86,31 @@
                             $student_student->setCourse($course);
                             $student_student->setMatriculation($matriculation);
 
-                            print_r($student_student);
+                            echo "<p>".$student_student->getName()          ."</p>";
+                            echo "<p>".$student_student->getAge()           ."</p>";
+                            echo "<p>".$student_student->getGenre()         ."</p>";
+                            echo "<p>".$student_student->getCourse()        ."</p>";
+                            echo "<p>".$student_student->getMatriculation() ."</p>";
 
                         } // student-student
                         /* --------------------------------------------------------------------------- */
                         elseif($scholarship && $renewscholarship){
-                            require_once "../../back/StudentsClass/";
+                            require_once "../../back/StudentsClass/ScholarshipClass.php";
+
+                            $student_scholarship = new Scholarship;
+
+                            $student_student->setName($name);
+                            $student_student->setAge($age);
+                            $student_student->setGenre($genre);
+                            $student_scholarship->setScholarship($scholarship);
+                            $student_scholarship->setRenewScholarship($renewscholarship);
+
+                            echo "<p>".$student_scholarship->getName()             ."</p>";
+                            echo "<p>".$student_scholarship->getAge()              ."</p>";
+                            echo "<p>".$student_scholarship->getGenre()            ."</p>";
+                            echo "<p>".$student_scholarship->getScholarship()      ."</p>";
+                            echo "<p>".$student_scholarship->getRenewScholarship() ."</p>";
+
                         } // Scholarship
                         /* --------------------------------------------------------------------------- */
                         elseif($professionalRegister){
