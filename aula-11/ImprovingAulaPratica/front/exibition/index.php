@@ -11,7 +11,7 @@
         <a href="../index/index.php">Go back to Index!</a>
     </header>
     <body>
-        <div class="container"><pre>
+        <div class="container">
             <div class="border">
 
 
@@ -75,7 +75,7 @@
 
                         } // teacher
                         /* --------------------------------------------------------------------------- */
-                        elseif($course && $matriculation){
+                        elseif($course and $matriculation){
                             require_once "../../back/StudentsClass/StudentClass.php";
                             
                             $student_student = new Student;
@@ -114,7 +114,7 @@
                         } // Scholarship
                         /* --------------------------------------------------------------------------- */
                         elseif($professionalRegister){
-                            require_once "../../back/StudentsClass/";
+                            require_once "../../back/StudentsClass/Tecnic.php";
 
                             $student_tecnic = new Tecnic;
                             
@@ -194,7 +194,6 @@
                     */
                 ?>
             </div> <!-- border -->
-
-</pre></div>
+        </div>
     </body>
 </html>
