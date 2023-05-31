@@ -1,0 +1,18 @@
+
+classe Peixe extende Animal{
+
+    privado corEscama;
+
+    publico metodo locomover(){
+        echo "Nadando";
+    }
+    publico metodo alimentar(){
+        echo "Comendo substâncias";
+    }
+    publico metodo emitirSom(){
+        echo "Peixe não faz som";
+    }
+    publico metodo soltarBolha(){
+        echo "Soltou uma bolha";
+    }
+}

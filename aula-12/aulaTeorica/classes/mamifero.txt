@@ -1,0 +1,15 @@
+
+classe Mamifero estende Animal{
+    
+    privado corPelo;
+
+    publico metodo locomover(){
+        echo "Correndo";
+    }
+    publico metodo alimentar(){
+        echo "Mamando";
+    }
+    publico metodo emitirSom(){
+        echo "Som de Mamifero";
+    }
+}

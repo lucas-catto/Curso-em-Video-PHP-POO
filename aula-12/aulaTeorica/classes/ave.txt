@@ -1,0 +1,18 @@
+
+classe Ave extende Animal{
+
+    privado corEscama;
+
+    publico metodo locomover(){
+        echo "Voando";
+    }
+    publico metodo alimentar(){
+        echo "Comendo frutas";
+    }
+    publico metodo emitirSom(){
+        echo "Som ave";
+    }
+    publico metodo fazerNinho(){
+        echo "Construiu um ninho";
+    }
+}

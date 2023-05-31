@@ -1,0 +1,15 @@
+
+classe Reptil extende Animal{
+
+    privado corEscama;
+
+    publico metodo locomover(){
+        echo "Rastejando";
+    }
+    publico metodo alimentar(){
+        echo "Comendo vegetais";
+    }
+    publico metodo emitirSom(){
+        echo "Som de Réptil";
+    }
+}

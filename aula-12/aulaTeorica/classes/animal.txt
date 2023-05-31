@@ -1,0 +1,11 @@
+
+classe abstrata Animal{
+
+    protegido peso;
+    protegido idade;
+    protegido membros;
+
+    publico metodo abstrato locomover();
+    publico metodo abstrato alimentar();
+    publico metodo abstrato emitirSom();
+}
