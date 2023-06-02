@@ -1,0 +1,7 @@
+
+classe Tartaruga estende Reptil{
+
+    publico metodo locomover(){
+        echo "Andando beeem devagar.";
+    }
+}

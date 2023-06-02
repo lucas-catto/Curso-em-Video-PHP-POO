@@ -1,0 +1,10 @@
+
+classe Canguru estende Mamifero{
+
+    publico metodo usarBolsa(){
+        echo "Usando bolsa.";
+    }
+    publico metodo locomover(){
+        echo "Saltando.";
+    }
+}

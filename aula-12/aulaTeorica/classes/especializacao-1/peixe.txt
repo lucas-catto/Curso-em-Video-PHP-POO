@@ -1,5 +1,5 @@
 
-classe Peixe extende Animal{
+classe Peixe estende Animal{
 
     privado corEscama;
 

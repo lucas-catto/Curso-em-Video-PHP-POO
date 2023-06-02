@@ -1,5 +1,5 @@
 
-classe Reptil extende Animal{
+classe Reptil estende Animal{
 
     privado corEscama;
 

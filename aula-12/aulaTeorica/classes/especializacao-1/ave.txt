@@ -1,7 +1,7 @@
 
-classe Ave extende Animal{
+classe Ave estende Animal{
 
-    privado corEscama;
+    privado corPena;
 
     publico metodo locomover(){
         echo "Voando";

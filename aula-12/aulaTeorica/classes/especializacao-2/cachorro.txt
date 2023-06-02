@@ -1,0 +1,10 @@
+
+classe Cachorro estende Mamifero{
+
+    publico metodo enterrarOsso(){
+        echo "Enterrando osso.";
+    }
+    publico metodo abanarRabo(){
+        echo "Abanando rabo.";
+    }
+}

@@ -1,6 +1,6 @@
 
 classe Mamifero estende Animal{
-    
+
     privado corPelo;
 
     publico metodo locomover(){
