@@ -1,0 +1,6 @@
+
+Class Gafanhoto{
+    - login;
+    - totalWatched;
+    + watchOneMore();
+}

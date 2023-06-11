@@ -1,0 +1,8 @@
+
+Class Person{
+    # name;
+    # age;
+    # genre;
+    # experience;
+    # earnExperience();
+}

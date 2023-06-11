@@ -1,0 +1,6 @@
+
+Interface VideoActions{
+    + play();
+    + pause();
+    + like();
+}

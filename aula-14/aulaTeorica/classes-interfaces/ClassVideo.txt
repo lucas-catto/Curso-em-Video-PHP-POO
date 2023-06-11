@@ -1,0 +1,10 @@
+
+require_once "InterfaceVideoActions.txt";
+
+Class Video Implements VideoActions{
+    + title;
+    + assessment;
+    + views;
+    + likes;
+    + reproducing;
+}
