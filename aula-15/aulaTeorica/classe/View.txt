@@ -1,0 +1,24 @@
+Class View{
+    ---------------------------------------
+    - viwer;
+    - movie;
+    ---------------------------------------
+    + toAssess(){}
+    + toAssess(note){}
+    + toAssess(porcentage){}
+    ---------------------------------------
+    public function getViwer(){
+        return $this->viwer
+    }
+    public function setViwer($viwer){
+        $this->viwer = $viwer;
+    }
+    ---------------------------------------
+    public function getMovie(){
+        return $this->movie;
+    }
+    public function setMovie($movie){
+        $this->movie = $movie;
+    }
+    ---------------------------------------
+}
