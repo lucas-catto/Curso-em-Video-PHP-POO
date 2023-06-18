@@ -41,9 +41,13 @@
             return $this->assessment;
         }
         public function setAssessment($assessment){
+            if($this->views == 0){
+                $this->views = 1;
+            }
+
             $media = 0;
-            $media = ($this->assessment + $assessment) / $this->getViews();
-            $this->assessment = $assessment;
+            $media = ($this->assessment + $assessment) / $this->views;
+            $this->assessment = $media;
         }
         // -----------------------------------
         public function getViews(){

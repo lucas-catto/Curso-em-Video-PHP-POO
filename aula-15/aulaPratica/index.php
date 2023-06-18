@@ -41,10 +41,11 @@
 
             $visualization = array();
 
-            $visualization[0] = new Visualization($gafanhoto[0], $video[0]);
-            $visualization[1] = new Visualization($gafanhoto[1], $video[1]);
+            $visualization[0] = new Visualization($gafanhoto[0], $video[2]);
+            $visualization[1] = new Visualization($gafanhoto[0], $video[1]);
 
             $visualization[0]->toAssess();
+            $visualization[0]->toAssessPorcentage(85);
 
             print_r($visualization);
         ?>
